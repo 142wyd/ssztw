@@ -6,8 +6,8 @@ import sqlite3
 # 自动定位到当前文件夹
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# 核心修改：判断是否在云端（Render），如果是，使用持久化硬盘路径 /data
-if os.path.exists('/data'):
+
+if False:  
     DB_PATH = '/data/website_data.db'
     UPLOAD_FOLDER = '/data/images'
 else:
